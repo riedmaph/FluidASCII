@@ -137,6 +137,9 @@ endoh1_deobfuscate: endoh1_deobfuscate.c
 endoh1_color: endoh1_color.c
 	${CC} ${CFLAGS} -DG=$G -DP=$P -DV=$P $< -o $@ ${LIBS}
 
+deobfuscated: deobfuscated.c
+	${CC} ${CFLAGS} -DG=$G -DP=$P -DV=$P $< -o $@ ${LIBS}
+
 # data files
 #
 data: ${DATA}
